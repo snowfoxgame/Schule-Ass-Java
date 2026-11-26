@@ -91,8 +91,7 @@ public class Main {
                             System.out.println(GELB + "\nUngültige Auswahl. Bitte versuchen Sie es erneut. 1-5\n" + RESET);
                     }
                     break;
-                case 2:
-                    // Lagerverwaltung
+                case 2: // Lagerverwaltung
                     System.out.println("\nStartbestand des Lagers eingeben:\n");
                     int startbestand = eingabe.nextInt();
                     Lager l1 = new Lager(startbestand);
@@ -135,8 +134,7 @@ public class Main {
                         }
                     }
                     break;
-                case 3:
-                    // Fahrzeugverwaltung
+                case 3: // Fahrzeugverwaltung
                     System.out.println("\nGib die Marke des Autos ein:\n");
                     String marke = eingabe.next();
                     Auto auto = new Auto();
@@ -169,11 +167,11 @@ public class Main {
                         }
                     }
                     break;
-                case 4:
+                case 4: // Abbrechen
                     laeuft = false;
                     System.out.println(ROT + "\nProgramm wird beendet." + RESET);
                     break;
-                default:
+                default: // Ungültig
                     System.out.println(GELB + "\nUngültige Auswahl. Bitte versuchen Sie es erneut." + RESET);
             }
         }
